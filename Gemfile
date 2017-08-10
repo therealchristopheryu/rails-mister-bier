@@ -57,3 +57,8 @@ gem 'rails-controller-testing', group: [ :test ]
 ruby '2.3.4'
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+gem 'faker'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
