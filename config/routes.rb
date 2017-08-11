@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   delete "doses/:id", to: "doses#destroy"
 
+  root to: 'cocktails#index'
 
   #get post patch delete
 end
