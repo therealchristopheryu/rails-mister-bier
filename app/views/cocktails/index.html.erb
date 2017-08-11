@@ -5,8 +5,21 @@
     <p><%= link_to "Add a drink", new_cocktail_path%></p>
   </div>
 </div>
+
+
+<div class="banner">
+<%= image_tag "cocktail.jpg", class: "banner"%>
+<div class = "gradient-background">
+</div>
+  <div class="banner-content">
+    <h1>Mister Cocktail</h1>
+    <p> Make some killer cocktails</p>
+  </div>
+</div>
+
+
 <div class='container'>
-  <% @cocktails.each do |c| %>
+  <% @cocktails.reverse_each do |c| %>
     <div class='drink'>
       <div class='card'>
         <p> <%=c.name%></p>
