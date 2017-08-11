@@ -1,3 +1,14 @@
+<div class="banner">
+<%= image_tag "cocktail.jpg", class: "banner"%>
+<div class = "gradient-background">
+</div>
+  <div class="banner-content">
+    <h1>Mister Bier </h1>
+    <p> Killer Hops</p>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="row">
     <% @cocktails.each do |c| %>
@@ -9,16 +20,6 @@
       </div>
 
     <% end %>
-  </div>
-</div>
-
-<div class="banner">
-<%= image_tag "cocktail.jpg", class: "banner"%>
-<div class = "gradient-background">
-</div>
-  <div class="banner-content">
-    <h1>Mister Bier </h1>
-    <p> Killer Hops</p>
   </div>
 </div>
 
