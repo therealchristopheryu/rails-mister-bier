@@ -3,7 +3,7 @@
 
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <%= f.input :description%>
-  <%= collection_select(:dose, :ingredient_id, Ingredient.all, :id, :name) %>
+  <%= f.association :ingredient, collection: Ingredient.all %>
   <%= f.submit "Add", class: "btn btn-primary" %>
 <% end %>
 <%= link_to "Back", cocktail_path(@cocktail) %>
