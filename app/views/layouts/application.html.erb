@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <div class='navbar-wagon'>
+      <h1>Bier</h1>
+      <div>
+        <p><%= link_to "MORE BIER!", new_cocktail_path, class: "btn btn-primary"%></p>
+      </div>
+    </div>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
