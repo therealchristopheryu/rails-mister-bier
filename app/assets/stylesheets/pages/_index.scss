@@ -1,6 +1,10 @@
 // Import page-specific CSS files here.
 @import "home";
 
+.h1 {
+  font-size: 60px;
+  }
+
 .container {
   display: flex;
   flex-flow:  wrap;
