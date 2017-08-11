@@ -2,10 +2,15 @@
   <div class="row">
     <% @cocktails.each do |c| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card"><%= cl_image_tag c.photo, height: 300, width: 400, crop: :fill %>
+        <div class="card"><%= cl_image_tag c.photo, height: 300, width: 300, crop: :fill %>
           <div class="card-description"><h5> <%=c.name%></h5></div>
         </div>
           <p> <%= link_to "View", cocktail_path(c) %> </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <div class="banner">
 <%= image_tag "cocktail.jpg", class: "banner"%>
@@ -29,6 +34,3 @@
     <% end %>
   </div>
 </div>
-
-
-

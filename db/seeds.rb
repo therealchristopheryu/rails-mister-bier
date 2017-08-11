@@ -10,7 +10,4 @@
   Ingredient.create(name: Faker::Food.ingredient)
 end
 
-40.times do
-  Cocktail.create(name: Faker::Beer.name)
-end
 
