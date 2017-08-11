@@ -11,11 +11,14 @@
 
 <div class="container">
   <div class="row">
-    <% @cocktails.each do |c| %>
+    <% @cocktails.reverse_each do |c| %>
       <div class="col-xs-12 col-sm-4">
         <div class="card"><%= cl_image_tag c.photo, height: 300, width: 300, crop: :fill %>
-          <div class="card-description"><h5> <%=c.name%></h5></div>
+          <div class="card-description">
+          <h5> <%=c.name%></h5>
           <p> <%= link_to "View", cocktail_path(c) %> </p>
+          </div>
+
         </div>
       </div>
 
@@ -23,15 +26,3 @@
   </div>
 </div>
 
-
-<div class='container'>
-  <% @cocktails.reverse_each do |c| %>
-    <div class='drink'>
-      <div class='card'>
-        <p> <%=c.name%></p>
-        <%= cl_image_tag c.photo, height: 300, width: 400, crop: :fill %>
-        <p> <%= link_to "View", cocktail_path(c) %> </p>
-      </div>
-    <% end %>
-  </div>
-</div>
