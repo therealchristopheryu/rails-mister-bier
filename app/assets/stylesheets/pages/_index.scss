@@ -9,13 +9,14 @@
   }
 
 .card {
-  height: 175px;
+  height: auto;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
-  padding-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 .card-user {
   position: absolute;
