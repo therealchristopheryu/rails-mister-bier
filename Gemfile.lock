@@ -227,6 +227,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bootstrap-sass
   byebug
   carrierwave (~> 0.11.2)
